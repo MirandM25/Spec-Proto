@@ -15,15 +15,6 @@ function toggleSection(button) {
     }
 }
 
-// Auto-open first collapsible section on load
-window.addEventListener('DOMContentLoaded', function() {
-    const firstCollapsible = document.querySelector('.collapsible-section');
-    if (firstCollapsible) {
-        const button = firstCollapsible.querySelector('.section-toggle');
-        toggleSection(button);
-    }
-});
-
 // Sticky apply card on scroll & Background image opacity effect
 window.addEventListener('scroll', function() {
     const applyCard = document.querySelector('.apply-card-sticky');
@@ -74,6 +65,75 @@ if (salaryInfoBtn && compensationModal) {
     compensationModal.addEventListener('click', function(e) {
         if (e.target === compensationModal) {
             compensationModal.classList.remove('active');
+        }
+    });
+}
+
+// Application Review Modal Handling
+const applicationReviewInfoBtn = document.getElementById('applicationReviewInfoBtn');
+const applicationReviewModal = document.getElementById('applicationReviewModal');
+const closeApplicationReviewModalBtn = document.getElementById('closeApplicationReviewModal');
+
+if (applicationReviewInfoBtn && applicationReviewModal) {
+    applicationReviewInfoBtn.addEventListener('click', function(e) {
+        e.preventDefault();
+        e.stopPropagation();
+        applicationReviewModal.classList.add('active');
+    });
+
+    closeApplicationReviewModalBtn.addEventListener('click', function() {
+        applicationReviewModal.classList.remove('active');
+    });
+
+    applicationReviewModal.addEventListener('click', function(e) {
+        if (e.target === applicationReviewModal) {
+            applicationReviewModal.classList.remove('active');
+        }
+    });
+}
+
+// Schedule Modal Handling
+const scheduleInfoBtn = document.getElementById('scheduleInfoBtn');
+const scheduleModal = document.getElementById('scheduleModal');
+const closeScheduleModalBtn = document.getElementById('closeScheduleModal');
+
+if (scheduleInfoBtn && scheduleModal) {
+    scheduleInfoBtn.addEventListener('click', function(e) {
+        e.preventDefault();
+        e.stopPropagation();
+        scheduleModal.classList.add('active');
+    });
+
+    closeScheduleModalBtn.addEventListener('click', function() {
+        scheduleModal.classList.remove('active');
+    });
+
+    scheduleModal.addEventListener('click', function(e) {
+        if (e.target === scheduleModal) {
+            scheduleModal.classList.remove('active');
+        }
+    });
+}
+
+// Location Modal Handling
+const locationInfoBtn = document.getElementById('locationInfoBtn');
+const locationModal = document.getElementById('locationModal');
+const closeLocationModalBtn = document.getElementById('closeLocationModal');
+
+if (locationInfoBtn && locationModal) {
+    locationInfoBtn.addEventListener('click', function(e) {
+        e.preventDefault();
+        e.stopPropagation();
+        locationModal.classList.add('active');
+    });
+
+    closeLocationModalBtn.addEventListener('click', function() {
+        locationModal.classList.remove('active');
+    });
+
+    locationModal.addEventListener('click', function(e) {
+        if (e.target === locationModal) {
+            locationModal.classList.remove('active');
         }
     });
 }
