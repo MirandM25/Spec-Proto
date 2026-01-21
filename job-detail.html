@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Human AI Logistics Mediator - National Distributed Work Platform - Job Details</title>
+    <link rel="stylesheet" href="style-guide.css">
+    <link rel="stylesheet" href="job-detail-styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <!-- Header Navigation -->
+    <header class="main-header">
+        <div class="header-container">
+            <div class="header-logo">
+                <h1>JobSearch</h1>
+            </div>
+            <nav class="header-nav">
+                <a href="#" class="nav-link">Find jobs</a>
+                <a href="#" class="nav-link">Company reviews</a>
+                <a href="#" class="nav-link">Salary guide</a>
+            </nav>
+            <div class="header-actions">
+                <!-- Icons moved to bottom nav -->
+            </div>
+        </div>
+    </header>
+
+    <!-- Background Hero Image -->
+    <div class="background-hero" id="backgroundHero">
+        <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=1200" alt="AI Human Collaboration" class="background-hero-image">
+    </div>
+
+    <!-- Main Content - Pull Up Card -->
+    <main class="job-detail-main">
+        <div class="job-detail-container">
+            <!-- Breadcrumb -->
+            <nav class="breadcrumb">
+                <a href="#"><i class="fas fa-arrow-left"></i></a>
+            </nav>
+
+            <!-- Job Header -->
+            <div class="job-detail-header">
+                <div class="job-header-content">
+                    <h1 class="job-detail-title">Human AI Logistics Mediator</h1>
+                    <div class="job-header-meta">
+                        <div class="company-info">
+                            <div class="company-logo">
+                                <i class="fas fa-building"></i>
+                            </div>
+                            <div class="company-details">
+                                <a href="#" class="company-name">National Distributed Work Platform // Federal Remote Work</a>
+                                <div class="company-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <span class="rating-score">3.9</span>
+                                    <a href="#" class="rating-link">37 reviews</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="job-header-actions">
+                            <button class="btn btn-icon save-btn-large">
+                                <i class="far fa-star"></i>
+                                <span>Save</span>
+                            </button>
+                            <button class="btn btn-icon">
+                                <i class="fas fa-share-alt"></i>
+                                <span>Share</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Quick Info Bar -->
+                <div class="quick-info-bar">
+                    <div class="quick-info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <strong>Location</strong>
+                            <span>Remote</span>
+                        </div>
+                    </div>
+                    <div class="quick-info-item">
+                        <i class="fas fa-dollar-sign"></i>
+                        <div>
+                            <strong>Salary
+                                <button class="info-icon-btn" id="salaryInfoBtn" aria-label="More information about salary">
+                                    <i class="fas fa-info-circle"></i>
+                                </button>
+                            </strong>
+                            <span>$100,000–$150,000 a year</span>
+                        </div>
+                    </div>
+                    <div class="quick-info-item">
+                        <i class="fas fa-briefcase"></i>
+                        <div>
+                            <strong>Job type</strong>
+                            <span>Contract, On-Demand / Variable Schedule</span>
+                        </div>
+                    </div>
+                    <div class="quick-info-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <strong>Posted</strong>
+                            <span>30+ days ago</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Compensation Info Modal -->
+            <div class="modal-overlay" id="compensationModal">
+                <div class="modal-banner">
+                    <div class="modal-header">
+                        <h3>Additional Information: Compensation</h3>
+                        <button class="modal-close" id="closeModal" aria-label="Close modal">
+                            <i class="fas fa-times"></i>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Compensation is dynamically calculated based on task complexity, system demand, and individual performance, ensuring flexible and responsive earning opportunities.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Content Grid -->
+            <div class="job-detail-grid">
+                <!-- Main Content Column -->
+                <div class="job-detail-content">
+                    <!-- Apply Section -->
+                    <div class="apply-section">
+                        <div class="apply-box">
+                            <div class="apply-badge">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Easily apply</span>
+                            </div>
+                            <p>Easily apply to this job without going to a third party site</p>
+                            <button class="btn btn-primary btn-lg btn-apply">
+                                <i class="fas fa-paper-plane"></i> Apply now
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Job Overview -->
+                    <section class="detail-section">
+                        <h2><i class="fas fa-info-circle"></i> Job Overview</h2>
+                        <div class="job-overview-grid">
+                            <div class="overview-item">
+                                <i class="fas fa-clock"></i>
+                                <div>
+                                    <strong>Job type</strong>
+                                    <span>Contract, On-Demand / Variable Schedule, Full-time</span>
+                                </div>
+                            </div>
+                            <div class="overview-item">
+                                <i class="fas fa-dollar-sign"></i>
+                                <div>
+                                    <strong>Pay</strong>
+                                    <span>$100,000–$150,000 a year</span>
+                                </div>
+                            </div>
+                            <div class="overview-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div>
+                                    <strong>Location</strong>
+                                    <span>Remote</span>
+                                </div>
+                            </div>
+                            <div class="overview-item">
+                                <i class="fas fa-calendar-alt"></i>
+                                <div>
+                                    <strong>Schedule</strong>
+                                    <span>Shifts may occur at any time, including overnight, or extended hours</span>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Job Summary -->
+                    <section class="detail-section">
+                        <h2><i class="fas fa-bullseye"></i> Job Summary</h2>
+                        <div class="section-content">
+                            <p>The Human AI Logistics Mediator plays a vital role in supporting Canada's next-generation logistics infrastructure by enabling seamless coordination between AI systems, robotic operations, and real-world environments. This position offers the opportunity to participate in advanced remote work supported by cutting-edge augmented reality (AR) technology, allowing individuals to contribute from flexible locations while remaining connected to national systems.</p>
+                            <p>Human AI Logistics Mediators support operational continuity by interpreting system prompts, validating automated decisions, and responding to real-time logistics needs. The role emphasizes adaptability, technological fluency, and the ability to work across dynamic conditions. As part of a distributed workforce, mediators contribute to efficient, scalable operations that support economic resilience and innovation.</p>
+                            <p>This position is well suited to individuals who are comfortable working with emerging technologies, value flexibility, and are interested in participating in the evolving future of work.</p>
+                        </div>
+                    </section>
+
+                    <!-- Key Responsibilities - COLLAPSIBLE -->
+                    <section class="detail-section collapsible-section">
+                        <button class="section-toggle" onclick="toggleSection(this)">
+                            <h2><i class="fas fa-tasks"></i> Key Responsibilities</h2>
+                            <i class="fas fa-chevron-down toggle-icon"></i>
+                        </button>
+                        <div class="section-content collapsible-content">
+                            <ul>
+                                <li>Maintain continuous oversight of AI-directed logistics systems through approved AR/MR interfaces during assigned shifts</li>
+                                <li>Interpret and respond to real-time system prompts, alerts, and task reallocations to ensure uninterrupted operations</li>
+                                <li>Monitor AI and robotic system performance, identifying errors, deviations, or environmental constraints requiring human intervention</li>
+                                <li>Execute physical and digital tasks under remote instruction to support automated workflows and resolve operational exceptions</li>
+                                <li>Track, verify, and log task completion, system activity, and performance metrics using live dashboards</li>
+                                <li>Comply with monitoring, documentation, and behavioral assessment protocols throughout all assignments</li>
+                            </ul>
+                        </div>
+                    </section>
+
+                    <!-- Required Certifications & Credentials - COLLAPSIBLE -->
+                    <section class="detail-section collapsible-section">
+                        <button class="section-toggle" onclick="toggleSection(this)">
+                            <h2><i class="fas fa-certificate"></i> Required Certifications & Credentials</h2>
+                            <i class="fas fa-chevron-down toggle-icon"></i>
+                        </button>
+                        <div class="section-content collapsible-content">
+                            <div class="qualification-category">
+                                <h3><i class="fas fa-id-badge"></i> Required Certifications</h3>
+                                <ul>
+                                    <li>AR Continuous Presence Certification (AR-CPC)</li>
+                                    <li>Remote Oversight & Compliance</li>
+                                    <li>XR Interface Literacy License (XR-ILL)</li>
+                                    <li>Robotic Co-Presence Safety Certification (RCPSC)</li>
+                                    <li>Paid Credential: Platform-Verified Worker Eligibility (PVWE)</li>
+                                    <li>Environmental Task Execution Permit (ETEP)</li>
+                                    <li>Dynamic Scheduling & Availability (DSAC)</li>
+                                    <li>Behavioral Reliability Index Clearance (BRIC)</li>
+                                    <li>Equipment Self-Provision Verification (ESPV)</li>
+                                </ul>
+                            </div>
+
+                            <div class="qualification-category">
+                                <h3><i class="fas fa-star"></i> Preferred Certifications</h3>
+                                <ul>
+                                    <li>Environmental Task Execution Permit (ETEP)</li>
+                                    <li>Dynamic Scheduling & Availability Certification (DSAC)</li>
+                                    <li>Behavioral Reliability Index Clearance (BRIC)</li>
+                                    <li>Equipment Self-Provision Verification (ESPV)</li>
+                                </ul>
+                            </div>
+
+                            <div class="qualification-category">
+                                <h3><i class="fas fa-laptop"></i> Equipment Requirements</h3>
+                                <ul>
+                                    <li>Approved AR/MR headset (worker-owned)</li>
+                                    <li>Compatible wearable monitoring attachment</li>
+                                    <li>Reliable network connectivity in varied environments</li>
+                                    <li>Ability to maintain and update equipment independently</li>
+                                </ul>
+                            </div>
+
+                            <div class="qualification-category">
+                                <h3><i class="fas fa-check-circle"></i> Eligibility Requirements</h3>
+                                <ul>
+                                    <li>Verified identity and compliance history</li>
+                                    <li>Ability to remain continuously connected during assigned shifts</li>
+                                    <li>Willingness to accept system-assigned tasks and locations</li>
+                                    <li>Agreement to data collection, monitoring, and performance scoring</li>
+                                </ul>
+                            </div>
+
+                            <div class="qualification-category">
+                                <h3><i class="fas fa-building"></i> Work Environment</h3>
+                                <ul>
+                                    <li>Remote and on-site environments may include indoor, outdoor, or transitional spaces</li>
+                                    <li>Tasks may require standing, walking, tool handling, or interaction with machinery</li>
+                                    <li>Environmental conditions will vary</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Application Process - COLLAPSIBLE -->
+                    <section class="detail-section collapsible-section">
+                        <button class="section-toggle" onclick="toggleSection(this)">
+                            <h2><i class="fas fa-clipboard-check"></i> Application Process</h2>
+                            <i class="fas fa-chevron-down toggle-icon"></i>
+                        </button>
+                        <div class="section-content collapsible-content">
+                            <ul>
+                                <li>Applications are reviewed automatically</li>
+                                <li>Eligibility is determined based on certification status, availability, and system demand</li>
+                                <li>Qualified applicants may receive immediate work notifications</li>
+                                <li>Failure to respond to notifications may affect future eligibility</li>
+                            </ul>
+                        </div>
+                    </section>
+
+                    <!-- Additional Information - COLLAPSIBLE -->
+                    <section class="detail-section collapsible-section">
+                        <button class="section-toggle" onclick="toggleSection(this)">
+                            <h2><i class="fas fa-info-circle"></i> Additional Information & Operational Requirements</h2>
+                            <i class="fas fa-chevron-down toggle-icon"></i>
+                        </button>
+                        <div class="section-content collapsible-content">
+                            <p><strong>AR Equipment Requirements:</strong> Continuous use of approved AR/MR equipment is required for the full duration of assigned shifts. Temporary removal, loss of connection, or interruption of system presence may result in performance penalties, compensation adjustments, or loss of future work eligibility.</p>
+                            
+                            <p><strong>Work Assignment Distribution:</strong> Work assignments are distributed algorithmically based on availability, certification status, compliance history, and system demand. Shift schedules may change without notice and may require work in indoor, outdoor, or transitional environments.</p>
+                            
+                            <p><strong>Monitoring & Assessment:</strong> Monitoring, logging, and behavioral assessment are conducted throughout all assignments to ensure operational reliability, system integrity, and compliance with oversight protocols.</p>
+                            
+                            <p><strong>Compensation Structure:</strong> Compensation is dynamically adjusted and may vary based on task completion, system interruptions, response time, and adherence to operational guidelines. Compensation may vary by assignment and is subject to performance-based adjustments, system interruptions, compliance status, and jurisdictional tax handling. Equipment, certification, and participation costs are the responsibility of the worker.</p>
+                            
+                            <p><strong>Access Requirements:</strong> Access to this role requires active certifications, paid credentials, and ownership of approved AR equipment. Applicants unable to meet these requirements may be redirected to on-site physical labor roles supporting AR-enabled operations, which operate under separate eligibility and allocation systems.</p>
+                            
+                            <p><strong>Assignment Compliance:</strong> Declining assignments, failing to respond to notifications, or exiting AR presence during active shifts may affect future access to work opportunities.</p>
+                            
+                            <button class="btn btn-primary btn-lg btn-apply-bottom">
+                                <i class="fas fa-paper-plane"></i> Apply now
+                            </button>
+                        </div>
+                    </section>
+
+                    <!-- Report Job -->
+                    <div class="report-section">
+                        <button class="btn btn-link">
+                            <i class="fas fa-flag"></i> Report job
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Sidebar -->
+                <aside class="job-detail-sidebar">
+                    <!-- Quick Apply Box -->
+                    <div class="sidebar-card apply-card-sticky">
+                        <h3>Apply for this position</h3>
+                        <p class="apply-description">
+                            <i class="fas fa-robot"></i>
+                            Applications reviewed automatically
+                        </p>
+                        <div class="warning-box">
+                            <i class="fas fa-exclamation-triangle"></i>
+                            <span>Certifications & AR equipment required</span>
+                        </div>
+                        <button class="btn btn-primary btn-lg btn-block">
+                            <i class="fas fa-paper-plane"></i> Apply now
+                        </button>
+                        <button class="btn btn-secondary btn-block">
+                            <i class="far fa-star"></i> Save for later
+                        </button>
+                    </div>
+
+                    <!-- Company Info -->
+                    <div class="sidebar-card">
+                        <h3>About National Distributed Work Platform</h3>
+                        <div class="company-sidebar-info">
+                            <p>A federal initiative supporting Canada's next-generation logistics infrastructure through AI-enabled distributed workforce coordination and augmented reality technology integration.</p>
+                            <div class="company-stats">
+                                <div class="stat-item">
+                                    <i class="fas fa-network-wired"></i>
+                                    <span>AI-Coordinated Operations</span>
+                                </div>
+                                <div class="stat-item">
+                                    <i class="fas fa-vr-cardboard"></i>
+                                    <span>AR/MR Technology Platform</span>
+                                </div>
+                                <div class="stat-item">
+                                    <i class="fas fa-chart-line"></i>
+                                    <span>Performance-Based Compensation</span>
+                                </div>
+                            </div>
+                            <a href="#" class="btn btn-link">View platform details <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- Compensation Insights -->
+                    <div class="sidebar-card">
+                        <h3>Compensation insights</h3>
+                        <div class="salary-info">
+                            <div class="salary-range">
+                                <div class="salary-bar">
+                                    <div class="salary-bar-fill" style="left: 40%; width: 35%;"></div>
+                                </div>
+                                <div class="salary-labels">
+                                    <span>$80k</span>
+                                    <span>$125k</span>
+                                    <span>$170k</span>
+                                </div>
+                            </div>
+                            <p class="salary-description">Dynamically calculated based on task complexity, system demand, and performance</p>
+                            <div class="warning-box" style="margin-top: 12px;">
+                                <i class="fas fa-info-circle"></i>
+                                <span style="font-size: 0.75rem;">Subject to performance adjustments and system interruptions</span>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h4>Job seekers</h4>
+                <ul>
+                    <li><a href="#">Browse jobs</a></li>
+                    <li><a href="#">Browse companies</a></li>
+                    <li><a href="#">Salaries</a></li>
+                    <li><a href="#">Career advice</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Employers</h4>
+                <ul>
+                    <li><a href="#">Post a job</a></li>
+                    <li><a href="#">Employer branding</a></li>
+                    <li><a href="#">Recruiting solutions</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Help</a></li>
+                    <li><a href="#">Contact us</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Resources</h4>
+                <ul>
+                    <li><a href="#">ESG</a></li>
+                    <li><a href="#">Accessibility</a></li>
+                    <li><a href="#">Privacy Centre</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 JobSearch. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- External JavaScript -->
+    <script src="job-detail-scripts.js"></script>
+
+    <!-- Similar Positions Section (Collapsible) -->
+    <section class="similar-positions-section collapsible-section">
+        <button class="section-toggle" onclick="toggleSection(this)">
+            <h2>Similar positions</h2>
+            <i class="fas fa-chevron-down toggle-icon"></i>
+        </button>
+        <div class="collapsible-content">
+            <div class="similar-positions-content">
+                <div class="similar-jobs-list">
+                    <a href="#" class="similar-job-item">
+                        <div class="similar-job-title">Remote Operations Coordinator</div>
+                        <div class="similar-job-company">AI Systems Integration</div>
+                        <div class="similar-job-location">Remote</div>
+                    </a>
+                    <a href="#" class="similar-job-item">
+                        <div class="similar-job-title">AR Logistics Specialist</div>
+                        <div class="similar-job-company">Federal Platform Services</div>
+                        <div class="similar-job-location">Remote</div>
+                    </a>
+                    <a href="#" class="similar-job-item">
+                        <div class="similar-job-title">Robotic Systems Monitor</div>
+                        <div class="similar-job-company">Distributed Workforce Network</div>
+                        <div class="similar-job-location">Remote</div>
+                    </a>
+                </div>
+                <a href="#" class="btn btn-link">View all similar positions <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bottom Navigation Bar -->
+    <nav class="bottom-nav">
+        <a href="#" class="bottom-nav-item active">
+            <i class="fas fa-home"></i>
+            <span>Home</span>
+        </a>
+        <a href="#" class="bottom-nav-item">
+            <i class="fas fa-envelope"></i>
+            <span>Messages</span>
+        </a>
+        <a href="#" class="bottom-nav-item">
+            <i class="fas fa-bell"></i>
+            <span>Notifications</span>
+        </a>
+        <a href="#" class="bottom-nav-item">
+            <i class="fas fa-user"></i>
+            <span>Profile</span>
+        </a>
+    </nav>
+</body>
+</html>
