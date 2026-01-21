@@ -79,7 +79,11 @@
                     <div class="quick-info-item">
                         <i class="fas fa-map-marker-alt"></i>
                         <div>
-                            <strong>Location</strong>
+                            <strong>Location
+                                <button class="info-icon-btn" id="locationInfoBtn" aria-label="More information about location">
+                                    <i class="fas fa-info-circle"></i>
+                                </button>
+                            </strong>
                             <span>Remote</span>
                         </div>
                     </div>
@@ -104,8 +108,12 @@
                     <div class="quick-info-item">
                         <i class="fas fa-clock"></i>
                         <div>
-                            <strong>Posted</strong>
-                            <span>30+ days ago</span>
+                            <strong>Schedule
+                                <button class="info-icon-btn" id="scheduleInfoBtn" aria-label="More information about schedule">
+                                    <i class="fas fa-info-circle"></i>
+                                </button>
+                            </strong>
+                            <span>Flexible shift scheduling</span>
                         </div>
                     </div>
                 </div>
@@ -122,6 +130,54 @@
                     </div>
                     <div class="modal-body">
                         <p>Compensation is dynamically calculated based on task complexity, system demand, and individual performance, ensuring flexible and responsive earning opportunities.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Application Review Info Modal -->
+            <div class="modal-overlay" id="applicationReviewModal">
+                <div class="modal-banner">
+                    <div class="modal-header">
+                        <h3>Application Review Process</h3>
+                        <button class="modal-close" id="closeApplicationReviewModal" aria-label="Close modal">
+                            <i class="fas fa-times"></i>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Applications are reviewed automatically using AI-assisted evaluation systems. Eligible candidates may be required to complete a system-led assessment or monitored interview to verify certification status, availability, and operational readiness. All interactions may be recorded and analyzed to support consistency, compliance, and placement decisions.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Schedule Info Modal -->
+            <div class="modal-overlay" id="scheduleModal">
+                <div class="modal-banner">
+                    <div class="modal-header">
+                        <h3>Schedule Requirements</h3>
+                        <button class="modal-close" id="closeScheduleModal" aria-label="Close modal">
+                            <i class="fas fa-times"></i>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Shifts may occur at any time, including overnight, or extended hours</p>
+                        <p>Continuous availability preferred</p>
+                        <p>Breaks permitted only during system-approved windows</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Location Info Modal -->
+            <div class="modal-overlay" id="locationModal">
+                <div class="modal-banner">
+                    <div class="modal-header">
+                        <h3>Location Details</h3>
+                        <button class="modal-close" id="closeLocationModal" aria-label="Close modal">
+                            <i class="fas fa-times"></i>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Remote (Physical presence required as assigned)</p>
+                        <p>Work location may vary daily and will be system-assigned following task acceptance.</p>
                     </div>
                 </div>
             </div>
@@ -143,41 +199,6 @@
                             </button>
                         </div>
                     </div>
-
-                    <!-- Job Overview -->
-                    <section class="detail-section">
-                        <h2><i class="fas fa-info-circle"></i> Job Overview</h2>
-                        <div class="job-overview-grid">
-                            <div class="overview-item">
-                                <i class="fas fa-clock"></i>
-                                <div>
-                                    <strong>Job type</strong>
-                                    <span>Contract, On-Demand / Variable Schedule, Full-time</span>
-                                </div>
-                            </div>
-                            <div class="overview-item">
-                                <i class="fas fa-dollar-sign"></i>
-                                <div>
-                                    <strong>Pay</strong>
-                                    <span>$100,000–$150,000 a year</span>
-                                </div>
-                            </div>
-                            <div class="overview-item">
-                                <i class="fas fa-map-marker-alt"></i>
-                                <div>
-                                    <strong>Location</strong>
-                                    <span>Remote</span>
-                                </div>
-                            </div>
-                            <div class="overview-item">
-                                <i class="fas fa-calendar-alt"></i>
-                                <div>
-                                    <strong>Schedule</strong>
-                                    <span>Shifts may occur at any time, including overnight, or extended hours</span>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
 
                     <!-- Job Summary -->
                     <section class="detail-section">
@@ -327,6 +348,9 @@
                         <p class="apply-description">
                             <i class="fas fa-robot"></i>
                             Applications reviewed automatically
+                            <button class="info-icon-btn" id="applicationReviewInfoBtn" aria-label="More information about application review">
+                                <i class="fas fa-info-circle"></i>
+                            </button>
                         </p>
                         <div class="warning-box">
                             <i class="fas fa-exclamation-triangle"></i>
