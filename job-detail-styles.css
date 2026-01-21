@@ -312,18 +312,26 @@
 .info-icon-btn {
     background: none;
     border: none;
-    padding: 0;
+    padding: 2px;
     cursor: pointer;
     color: var(--indeed-blue);
     font-size: 0.875rem;
     transition: color 0.2s;
     display: inline-flex;
     align-items: center;
-    margin-left: 2px;
+    justify-content: center;
+    margin-left: 4px;
+    vertical-align: middle;
+    line-height: 1;
+}
+
+.info-icon-btn i {
+    font-size: 1rem;
 }
 
 .info-icon-btn:hover {
     color: var(--indeed-dark-blue);
+    transform: scale(1.1);
 }
 
 /* ============================================
@@ -336,11 +344,14 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
     z-index: 1000;
-    align-items: flex-end;
+    align-items: center;
     justify-content: center;
     animation: fadeIn 0.3s ease-out;
+    padding: var(--space-lg);
 }
 
 .modal-overlay.active {
@@ -349,13 +360,15 @@
 
 .modal-banner {
     background: var(--white);
-    border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+    border-radius: var(--radius-lg);
     width: 100%;
     max-width: 500px;
     padding: var(--space-2xl);
-    box-shadow: var(--shadow-lg);
-    animation: slideUp 0.3s ease-out;
-    margin-bottom: 70px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+    animation: scaleIn 0.3s ease-out;
+    margin: auto;
+    max-height: 80vh;
+    overflow-y: auto;
 }
 
 .modal-header {
@@ -411,12 +424,14 @@
     }
 }
 
-@keyframes slideUp {
+@keyframes scaleIn {
     from {
-        transform: translateY(100%);
+        transform: scale(0.9);
+        opacity: 0;
     }
     to {
-        transform: translateY(0);
+        transform: scale(1);
+        opacity: 1;
     }
 }
 
@@ -1017,22 +1032,36 @@
         padding-top: 50vh;
     }
     
-    /* Full width container on mobile */
+    /* Container with side spacing on mobile */
     .job-detail-container {
         border-radius: var(--radius-lg) var(--radius-lg) 0 0;
-        padding: 0;
+        padding: 0 var(--space-lg);
+        padding-bottom: var(--space-xl);
     }
     
     /* Breadcrumb positioning on mobile */
     .breadcrumb {
-        padding: var(--space-md);
+        padding: var(--space-md) 0;
         margin-bottom: 0;
     }
     
     /* Header adjustments */
     .job-detail-header {
-        padding: 0 var(--space-md) var(--space-md);
+        padding: var(--space-md) 0;
         border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+    }
+    
+    /* Content sections with proper spacing */
+    .job-detail-content,
+    .job-detail-sidebar {
+        padding: 0;
+    }
+    
+    .detail-section,
+    .apply-section,
+    .sidebar-card {
+        margin-left: 0;
+        margin-right: 0;
     }
 }
 
@@ -1146,10 +1175,10 @@ body {
 
 @media (max-width: 480px) {
     .similar-positions-section .section-toggle {
-        padding: var(--space-md);
+        padding: var(--space-md) var(--space-lg);
     }
     
     .similar-positions-content {
-        padding: 0 var(--space-md) var(--space-md);
+        padding: 0 var(--space-lg) var(--space-md);
     }
 }
